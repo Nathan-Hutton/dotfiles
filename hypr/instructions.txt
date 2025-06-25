@@ -1,2 +1,3 @@
-Must install sssw, yazi, waybar, and fuzzel, swaylock, swayidle, grim, wl-clipboard
+Must install sssw, yazi, waybar, and fuzzel, swaylock, swayidle, grim, slurp, swappy
 Need to put the ../swayland directory in ~/.config/
+
