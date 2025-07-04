@@ -1,1 +1,1 @@
-Must install sssw, yazi, waybar, and fuzzel, swaylock
+Must install sssw, yazi, waybar, and fuzzel, swaylock, swayidle
