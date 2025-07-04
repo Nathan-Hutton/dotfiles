@@ -28,9 +28,7 @@
     "backlight",
     "battery",
     "power-profiles-daemon",
-    "tray",
-    // "custom/power-button",
-    "custom/rofi"
+    "tray"
   ],
 
   // -------------------------------------------------------------------------
@@ -222,28 +220,6 @@
     }
   },
 
-  // Custom Rofi launcher module
-  "custom/rofi": {
-    "format": " ",
-    "on-click": "~/.config/rofi/launchers/type-4/launcher.sh",
-    "on-click-right": "~/.config/rofi/powermenu/type-3/powermenu.sh",
-    "escape": true,
-    "tooltip": false
-  },
-
-  // Custom Power Button module
-  "custom/power-button": {
-    "format": "  ",
-    "on-click": "/home/r4ppz/.config/rofi/powermenu/type-3/powermenu.sh", // Rofi
-    "tooltip": false
-  },
-
-  // Custom Web Links module (commented out in modules-left)
-  "custom/web-links": {
-    "format": "  ",
-    "on-click": "~/.config/rofi/applets/bin/quicklinks.sh",
-    "tooltip": false
-  },
 
   // Custom Playerctl module (commented out in modules-left)
   "custom/playerctl": {
