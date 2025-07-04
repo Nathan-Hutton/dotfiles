@@ -1,0 +1,10 @@
+Need nerd fonts. Run:
+pacman -Qg nerd-fonts
+sudo pacman -S $(pacman -Sgq nerd-fonts)
+
+For the battery:
+sudo pacman -S power-profiles-daemon
+sudo systemctl enable --now power-profiles-daemon.service
+
+For some other bullshit:
+sudo pacman -S xdg-desktop-portal-hyprland
