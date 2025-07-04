@@ -22,7 +22,7 @@ set updatetime=100 " This will make gitgutter refresh quicker
 set termguicolors
 
 set background=dark
-let g:gruvbox_contrast_dark='hard'
+"let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_italic=1
 let g:gruvbox_bold=1
 let g:gruvbox_transparent_bg=1
