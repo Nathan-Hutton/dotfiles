@@ -1,1 +1,2 @@
 Must install sssw, yazi, waybar, and fuzzel, swaylock, swayidle
+Need to put the ../swayland directory in ~/.config/
