@@ -46,6 +46,7 @@ window#waybar.hidden {
 #battery.warning,
 #clock,
 #power-profiles-daemon,
+#custom-power,
 #memory,
 #submap {
   font-family: JetBrainsMono Nerd Font;
@@ -203,6 +204,12 @@ window#waybar.hidden {
   padding-left: 2px;
   padding-right: 2px;
   color: #d3869b;
+}
+
+#custom-power {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #cc241d;
 }
 
 /* ======================================================== */
