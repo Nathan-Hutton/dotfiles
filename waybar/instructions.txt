@@ -1,10 +1,22 @@
-Need nerd fonts. Run:
+Need nerd fonts and awesome fonts. Run:
+sudo pacman -S ttf-font-awesome
 pacman -Qg nerd-fonts
 sudo pacman -S $(pacman -Sgq nerd-fonts)
 
 For the battery:
 sudo pacman -S power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon.service
+
+For audio:
+sudo pacman -S pipewire pipewire-pulse wireplumber
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+sudo pacman -S pavucontrol
+
+For brightness:
+sudo pacman -S brightnessctl
+
+For clock:
+sudo pacman -S gsimplecal
 
 For some other bullshit:
 sudo pacman -S xdg-desktop-portal-hyprland

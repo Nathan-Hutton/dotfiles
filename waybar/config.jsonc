@@ -23,7 +23,6 @@
     "memory",
     "cpu",
     "temperature",
-    // "disk",
     "pulseaudio",
     "backlight",
     "battery",
@@ -45,20 +44,20 @@
     "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
-      "1": "",
+      "1": "",
       "2": "",
-      "3": "",
-      "4": "",
-      "5": "󰝰",
-      "6": "",
-      "7": "󰍛",
-      "8": "",
-      "9": "󰍹",
-      "10": "",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
       "special": ""
     },
     "persistent-workspaces": {
-      "*": 3
+      "*": 2
     }
     // "on-scroll-up": "hyprctl dispatch workspace e+1",
     // "on-scroll-down": "hyprctl dispatch workspace e-1"
@@ -83,12 +82,6 @@
   "tray": {
     "icon-size": 12,
     "spacing": 7
-  },
-
-  // Disk module (commented out in modules-right)
-  "disk": {
-    "format": " 󰣆  {free}",
-    "interval": 20
   },
 
   // CPU module
@@ -197,12 +190,10 @@
 
   // Clock module
   "clock": {
-    // "timezone": "America/New_York",
     "format": "<span color='#689d6a'> 󰥔 </span> {:%I:%M:%S %p}",
     "format-alt": "<span color='#689d6a'>  </span> {:%m-%d-%Y}",
     "tooltip": true,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    // "on-click": "gsimplecal",
     "on-click-right": "gsimplecal",
     "interval": 1
   },
@@ -218,19 +209,5 @@
       "balanced": "  ",
       "power-saver": "  "
     }
-  },
-
-
-  // Custom Playerctl module (commented out in modules-left)
-  "custom/playerctl": {
-    "return-type": "json",
-    "max-length": 30,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{title}}\", \"tooltip\": \"{{playerName}}: {{artist}} - {{title}}\\n{{album}}\"}' 2>/dev/null || echo ''",
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl next",
-    "on-click-middle": "playerctl previous",
-    "tooltip": true,
-    "tooltip-format": "<b>{playerName}</b>\nArtist: {artist}\nTitle: {title}\nAlbum: {album}",
-    "interval": 2
   }
 }
