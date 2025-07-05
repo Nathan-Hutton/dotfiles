@@ -34,7 +34,6 @@ window#waybar.hidden {
 #workspaces button.special.active,
 #window,
 #tray,
-#disk,
 #cpu,
 #temperature,
 #temperature.critical,
@@ -46,9 +45,7 @@ window#waybar.hidden {
 #battery.critical,
 #battery.warning,
 #clock,
-#custom-web-links,
 #power-profiles-daemon,
-#custom-power-button,
 #memory,
 #submap {
   font-family: JetBrainsMono Nerd Font;
@@ -62,7 +59,6 @@ window#waybar.hidden {
 
 #window,
 #tray,
-#disk,
 #cpu,
 #temperature,
 #temperature.critical,
@@ -86,13 +82,13 @@ window#waybar.hidden {
   border-radius: 0.7px;
   margin-bottom: 3px;
   margin-top: 3px;
-  margin-right: 4px;
-  margin-left: 4px;
-  min-width: 30px;
+  margin-right: 1px;
+  margin-left: 1px;
+  min-width: 20px;
 }
 
 #workspaces button:hover {
-  background: #83a598;
+  background: #8ec07c;
 }
 
 #workspaces button.visible {
@@ -100,7 +96,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.visible:hover {
-  background: #83a598;
+  background: #8ec07c;
 }
 
 #workspaces button.active {
@@ -108,7 +104,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active:hover {
-  background: #83a598;
+  background: #8ec07c;
 }
 
 #workspaces button.urgent {
@@ -121,30 +117,6 @@ window#waybar.hidden {
 
 #workspaces button.special.active {
   background-color: #D79921;
-}
-
-/* ======================================================== */
-/* window */
-/* ======================================================== */
-#window {
-  color: #282828;
-  background: #83a598;
-  border-radius: 0.7px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 5px;
-  margin-right: 3px;
-
-  padding-left: 5px;
-  padding-right: 5px;
-  /* min-width: 20px; */
-}
-
-window#waybar.empty #window {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  color: transparent;
 }
 
 /* For debugging */
