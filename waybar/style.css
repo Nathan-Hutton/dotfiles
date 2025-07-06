@@ -11,7 +11,8 @@
 
 window#waybar {
   /* background: none; */
-  background: #272e33;
+  /*background: #272e33;*/
+  background: rgba(39, 46, 51, 0.5)
   /*background: rgba(40, 40, 40, 1.0) */
   /* border: 1px solid #32302F; */
   /* border-bottom: 1px solid #282828; */
@@ -71,9 +72,9 @@ window#waybar {
 /* ======================================================== */
 #workspaces button {
   color: #d3c6aa;
+  background: rgba(39, 46, 51, 0.0);
   /*border-radius: 0.7px;*/
   border: none;
-  border-top: 3px solid transparent;
   margin-bottom: 3px;
   margin-top: 3px;
   margin-right: 1px;
@@ -83,29 +84,23 @@ window#waybar {
 
 #workspaces button:hover {
   border-top: 3px solid #a7c080;
-  background: #272e33;
 }
 
 #workspaces button.visible {
-  background: #272e33;
 }
 
 #workspaces button.visible:hover {
-  background: #272e33;
 }
 
 #workspaces button.active {
   border-top: 3px solid #7fbbb3;
-  background: #272e33;
 }
 
 #workspaces button.active:hover {
   border-top: 3px solid #a7c080;
-  background: #272e33;
 }
 
 #workspaces button.urgent {
-  background: #ea6962;
 }
 
 /* For debugging */
@@ -156,15 +151,6 @@ window#waybar {
 }
 #battery.critical {
   color: #e67e80;
-}
-#battery.warning {
-  color: #d3c6aa;
-}
-#battery.full {
-  color: #d3c6aa;
-}
-#battery.charging {
-  color: #d3c6aa;
 }
 
 /* ======================================================== */
