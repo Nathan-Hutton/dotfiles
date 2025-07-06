@@ -1,2 +1,2 @@
-Must install sssw yazi waybar and fuzzel grim slurp swappy wl-clipboard hyprlock hypridle 
+Must install sssw yazi waybar and fuzzel grim slurp swappy wl-clipboard hyprlock hypridle hyprpicker
 
