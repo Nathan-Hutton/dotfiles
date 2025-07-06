@@ -4,7 +4,7 @@
   // General Waybar configuration
   "position": "top",
   "layer": "top",
-  "height": 21,
+  "height": 22,
   "spacing": 0,
   "margin-top": 0,
   "margin-right": 0,
@@ -114,16 +114,16 @@
   "pulseaudio": {
     "scroll-step": 1,
     "format": "{icon} {volume}%",
-    "format-muted": "<span color='#cc241d'>󰝟</span> {volume}%",
-    "format-bluetooth": "<span color='#458588'>󰂰</span> {volume}%",
-    "format-bluetooth-muted": "<span color='#cc241d'>󰂲</span> {volume}%",
-    "format-source": "<span color='#458588'>󰍬</span> {volume}%",
-    "format-source-muted": "<span color='#cc241d'>󰍭</span>",
+    "format-muted": "<span color='#d3c6aa'>󰝟</span> {volume}%",
+    "format-bluetooth": "<span color='#d3c6aa'>󰂰</span> {volume}%",
+    "format-bluetooth-muted": "<span color='#d3c6aa'>󰂲</span> {volume}%",
+    "format-source": "<span color='#d3c6aa'>󰍬</span> {volume}%",
+    "format-source-muted": "<span color='#d3c6aa'>󰍭</span>",
     "format-icons": {
       "default": [
-        "<span color='#458588'>󰕿</span>",  // low volume
-        "<span color='#458588'>󰖀</span>",  // medium volume
-        "<span color='#458588'>󰕾</span>"   // high volume
+        "<span color='#d3c6aa'>󰕿</span>",  // low volume
+        "<span color='#d3c6aa'>󰖀</span>",  // medium volume
+        "<span color='#d3c6aa'>󰕾</span>"   // high volume
       ]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -155,22 +155,22 @@
       "󰂂",
       "󰁹"
     ],
-    "format": "<span color='#98971A'> {icon} </span> {capacity}%",
-    "format-critical": "<span color='#cc241d'> {icon} </span> {capacity}%!!",
-    "format-warning": "<span color='#d79921'> {icon} </span> {capacity}%",
-    "format-full": "<span color='#98971a'> {icon} </span> {capacity}%",
-    "format-charging": "<span color='#B8BB26'> 󰂅 </span> {capacity}%",
-    "format-charging-warning": "<span color='#d79921'> 󰢝 </span> {capacity}%",
-    "format-charging-critical": "<span color='#cc241d'> 󰢜 </span> {capacity}%",
-    "format-plugged": "<span color='#98971a'> 󰂅 </span> {capacity}%",
-    "format-alt": "<span color='#98971a'> 󱧥 </span> {time}",
+    "format": "<span color='#d3c6aa'> {icon} </span> {capacity}%",
+    "format-critical": "<span color='#e67e80'> {icon} </span> {capacity}%!!",
+    "format-warning": "<span color='#d3c6aa'> {icon} </span> {capacity}%",
+    "format-full": "<span color='#d3c6aa'> {icon} </span> {capacity}%",
+    "format-charging": "<span color='#d3c6aa'> 󰂅 </span> {capacity}%",
+    "format-charging-warning": "<span color='#d3c6aa'> 󰢝 </span> {capacity}%",
+    "format-charging-critical": "<span color='#d3c6aa'> 󰢜 </span> {capacity}%",
+    "format-plugged": "<span color='#d3c6aa'> 󰂅 </span> {capacity}%",
+    "format-alt": "<span color='#d3c6aa'> 󱧥 </span> {time}",
     "tooltip": false
   },
 
   // Clock module
   "clock": {
-    "format": "<span color='#689d6a'> 󰥔 </span> {:%I:%M:%S %p}",
-    "format-alt": "<span color='#689d6a'>  </span> {:%m-%d-%Y}",
+    "format": "{:%I:%M:%S}",
+    "format-alt": "{:%m-%d-%Y}",
     "tooltip": true,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "on-click-right": "gsimplecal",
