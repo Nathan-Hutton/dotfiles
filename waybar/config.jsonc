@@ -13,7 +13,6 @@
   // Module placement
   "modules-left": [
     "hyprland/workspaces",
-    "hyprland/window",
     "hyprland/submap"
   ],
   "modules-center": [
@@ -22,7 +21,6 @@
   "modules-right": [
     "memory",
     "cpu",
-    "temperature",
     "pulseaudio",
     "backlight",
     "battery",
@@ -64,15 +62,6 @@
     }
   },
 
-  // Hyprland window
-  "hyprland/window": {
-  "format": "  {class}",
-  "max-length": 15,
-  "icon": false,
-  "icon-size": 9,
-  "separate-outputs": true
-  },
-
   // Hyprland Submap
   "hyprland/submap": {
     "format": "{}",
@@ -99,17 +88,6 @@
     "tooltip": false,
     "interval": 10,
     "on-click-right": "kitty -e btop"
-  },
-
-  // Temperature module
-  // Note: change the thermal-zone to match your CPU sensor (not consistent across systems)
-  "temperature": {
-    "tooltip": false,
-    "thermal-zone": 7,
-    "critical-threshold": 70,
-    "interval": 2,
-    "format": "   {temperatureC}°C",
-    "format-critical": "   {temperatureC}°C"
   },
 
   // Backlight module

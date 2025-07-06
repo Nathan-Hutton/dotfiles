@@ -11,16 +11,11 @@
 
 window#waybar {
   /* background: none; */
-  background: #282828;
   /* background: #232323; */
-  /* background: rgba(40, 40, 40, 1); */
+  background: rgba(40, 40, 40, 0.0)
   /* border: 1px solid #32302F; */
   /* border-bottom: 1px solid #282828; */
   /* border-radius: 1px; */
-}
-
-window#waybar.hidden {
-  opacity: 0.98;
 }
 
 #workspaces button,
@@ -35,8 +30,6 @@ window#waybar.hidden {
 #window,
 #tray,
 #cpu,
-#temperature,
-#temperature.critical,
 #backlight,
 #custom-memory,
 #pulseaudio,
@@ -61,8 +54,6 @@ window#waybar.hidden {
 #window,
 #tray,
 #cpu,
-#temperature,
-#temperature.critical,
 #backlight,
 #custom-memory,
 #pulseaudio,
@@ -133,17 +124,6 @@ window#waybar.hidden {
 /* ======================================================== */
 #cpu {
   color: #e78a4e;
-}
-
-/* ======================================================== */
-/* temp */
-/* ======================================================== */
-#temperature {
-  color: #d8a657;
-}
-
-#temperature.critical {
-  color: #cc241d;
 }
 
 /* ======================================================== */
