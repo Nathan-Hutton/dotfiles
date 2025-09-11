@@ -1,6 +1,8 @@
 set number
+set expandtab
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set autoindent
 set hlsearch " Keep searches highlighted until you hit ctrl+l
 set shortmess-=S " Show search index. Like [4/30]
@@ -13,6 +15,7 @@ call plug#begin()
 
 Plug 'sainnhe/everforest'
 "Plug 'morhetz/gruvbox'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 
@@ -31,4 +34,11 @@ let g:everforest_background = 'hard'   " or 'medium', or 'hard'
 "let g:gruvbox_bold=1
 "let g:gruvbox_transparent_bg=1
 
-colorscheme everforest
+"colorscheme everforest
+"colorscheme catppuccin_macchiato
+colorscheme catppuccin_mocha
+
+augroup MyIndentOverrides
+  autocmd!
+  autocmd FileType racket setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+augroup END
