@@ -13,7 +13,7 @@ let &t_EI = "\e[2 q"  " Block in normal mode
 " To install these pluggins, go into vim and run :PlugInstall
 call plug#begin()
 
-Plug 'sainnhe/everforest'
+"Plug 'sainnhe/everforest'
 "Plug 'morhetz/gruvbox'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-sensible'
@@ -22,20 +22,20 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set updatetime=100 " This will make gitgutter refresh quicker
+set scrolloff=0 " Undo scrolloff=1 from vim-sensible. No longer need at least 1 line above cursor
 
 " Neccessary for tmux
 set termguicolors
 
-set background=dark
+"set background=dark
 "let g:everforest_transparent_background = 1
-let g:everforest_background = 'hard'   " or 'medium', or 'hard'
+"let g:everforest_background = 'hard'   " or 'medium', or 'hard'
 "let g:gruvbox_contrast_dark='hard'
 "let g:gruvbox_italic=1
 "let g:gruvbox_bold=1
 "let g:gruvbox_transparent_bg=1
 
 "colorscheme everforest
-"colorscheme catppuccin_macchiato
 colorscheme catppuccin_mocha
 
 augroup MyIndentOverrides
