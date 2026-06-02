@@ -1,0 +1,18 @@
+# 1. Create the uinput group if it doesn't exist
+sudo groupadd -f uinput
+
+# 2. Add yourself to both permission groups
+sudo usermod -aG input,uinput $USER
+
+sudo tee /etc/udev/rules.d/99-kanata.rules << 'EOF'
+KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+EOF
+
+sudo tee /etc/modules-load.d/uinput.conf << 'EOF'
+uinput
+EOF
+
+sudo modprobe uinput
+sudo udevadm control --reload-rules && sudo udevadm trigger
+
+sudo reboot

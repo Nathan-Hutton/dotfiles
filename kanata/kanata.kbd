@@ -1,0 +1,32 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  a s d f        ;; Reference keys just to establish structural spacing
+  h j k l        ;; The physical keys we want to remap
+  lalt           ;; The physical Left Alt key
+)
+
+(defvar
+  ;; Tapping term: How long (in ms) you can hold Alt before it switches layers
+  tap-time 200
+  hold-time 200
+)
+
+(defalias
+  ;; lmet = Left Meta/Super (Windows Key) if you ever want it, but here we use lalt:
+  alt-nav (tap-hold $tap-time $hold-time lalt (layer-toggle navigation))
+)
+
+(deflayer base
+  _ _ _ _
+  _ _ _ _
+  @alt-nav
+)
+
+(deflayer navigation
+  _ _ _ _
+  left down up rght
+  _
+)
